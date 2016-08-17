@@ -1,6 +1,6 @@
 ﻿namespace Assignment_7_Movie_Bonanza
 {
-    partial class Form1
+    partial class SplashForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,9 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // SplashForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(640, 290);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "SplashForm";
+            this.Text = "SplashForm";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
