@@ -28,21 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            this.Splashscreentimer = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
+            // 
+            // Splashscreentimer
+            // 
+            this.Splashscreentimer.Enabled = true;
+            this.Splashscreentimer.Interval = 3000;
+            this.Splashscreentimer.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // SplashForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(640, 290);
+            this.ClientSize = new System.Drawing.Size(640, 300);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SplashForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SplashForm";
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Timer Splashscreentimer;
     }
 }
 

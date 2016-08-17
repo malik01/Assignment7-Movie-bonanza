@@ -6,17 +6,19 @@ using System.Windows.Forms;
 
 namespace Assignment_7_Movie_Bonanza
 {
-    static class Program
+    public static class Program
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
+        public static SplashForm splashsrceen;
+        public static SelectionForm selectionscreen;
         [STAThread]
-        static void Main()
+        public static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SplashForm());
+            selectionscreen = new SelectionForm();
+            splashsrceen = new SplashForm();
+            
+            Application.Run(splashsrceen);
         }
     }
 }
