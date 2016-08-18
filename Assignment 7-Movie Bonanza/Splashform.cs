@@ -14,7 +14,6 @@ namespace Assignment_7_Movie_Bonanza
     {
         public SelectionForm selectionform = Program.selectionscreen;
         public SplashForm splashForm = Program.splashsrceen;
-
         public SplashForm()
         {
             InitializeComponent();

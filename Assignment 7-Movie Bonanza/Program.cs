@@ -10,6 +10,8 @@ namespace Assignment_7_Movie_Bonanza
     {
         public static SplashForm splashsrceen;
         public static SelectionForm selectionscreen;
+        public static OrderForm ordercreen;
+        public static StreamForm streamscreen;
         [STAThread]
         public static void Main()
         {
