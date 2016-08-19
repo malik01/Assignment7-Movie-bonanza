@@ -33,11 +33,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.FirstNameListBox = new System.Windows.Forms.ListBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
+            this.FirstAbilityComboBox = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -85,38 +86,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "TITLE";
             // 
-            // FirstNameListBox
-            // 
-            this.FirstNameListBox.FormattingEnabled = true;
-            this.FirstNameListBox.ItemHeight = 25;
-            this.FirstNameListBox.Items.AddRange(new object[] {
-            "Cedar Rapids ",
-            "Company Men ",
-            "Death Race 2",
-            "Footloose",
-            "Gnomeo and Juliet ",
-            "I am Number Four",
-            "Just Go With It",
-            "No Strings Attached ",
-            "Real Steel",
-            "Sanctum ",
-            "Season of the Witch",
-            "The Dilemma ",
-            "The Eagle ",
-            "The Green Hornet",
-            "The Mechanic ",
-            "The Other Woman",
-            "The Rite ",
-            "The Roommate ",
-            "The Way Back ",
-            "Waiting for Forever "});
-            this.FirstNameListBox.Location = new System.Drawing.Point(80, 70);
-            this.FirstNameListBox.Margin = new System.Windows.Forms.Padding(4);
-            this.FirstNameListBox.Name = "FirstNameListBox";
-            this.FirstNameListBox.Size = new System.Drawing.Size(204, 354);
-            this.FirstNameListBox.Sorted = true;
-            this.FirstNameListBox.TabIndex = 2;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Location = new System.Drawing.Point(26, 73);
@@ -147,12 +116,55 @@
             this.textBox3.TabIndex = 5;
             this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
+            // FirstAbilityComboBox
+            // 
+            this.FirstAbilityComboBox.BackColor = System.Drawing.Color.White;
+            this.FirstAbilityComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.FirstAbilityComboBox.FormattingEnabled = true;
+            this.FirstAbilityComboBox.Items.AddRange(new object[] {
+            "Cedar Rapids ",
+            "Company Men ",
+            "Death Race 2",
+            "Footloose",
+            "Gnomeo and Juliet ",
+            "I am Number Four",
+            "Just Go With It",
+            "No Strings Attached ",
+            "Real Steel",
+            "Sanctum ",
+            "Season of the Witch",
+            "The Dilemma ",
+            "The Eagle ",
+            "The Green Hornet",
+            "The Mechanic ",
+            "The Other Woman",
+            "The Rite ",
+            "The Roommate ",
+            "The Way Back ",
+            "Waiting for Forever "});
+            this.FirstAbilityComboBox.Location = new System.Drawing.Point(67, 42);
+            this.FirstAbilityComboBox.Margin = new System.Windows.Forms.Padding(4);
+            this.FirstAbilityComboBox.MaxDropDownItems = 6;
+            this.FirstAbilityComboBox.Name = "FirstAbilityComboBox";
+            this.FirstAbilityComboBox.Size = new System.Drawing.Size(217, 33);
+            this.FirstAbilityComboBox.TabIndex = 2;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(13, 13);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(638, 25);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Please Choose A Movie From The List Below That You Wish To Stream";
+            // 
             // SelectionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(849, 452);
-            this.Controls.Add(this.FirstNameListBox);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.FirstAbilityComboBox);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -163,6 +175,7 @@
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -176,6 +189,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.ListBox FirstNameListBox;
+        private System.Windows.Forms.ComboBox FirstAbilityComboBox;
+        private System.Windows.Forms.Label label4;
     }
 }

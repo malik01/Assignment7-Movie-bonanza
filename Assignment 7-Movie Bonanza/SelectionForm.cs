@@ -19,7 +19,12 @@ namespace Assignment_7_Movie_Bonanza
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
+            
+        }
 
+        private void FirstNameListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }
