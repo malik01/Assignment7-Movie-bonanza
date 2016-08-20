@@ -6,6 +6,13 @@ using System.Windows.Forms;
 
 namespace Assignment_7_Movie_Bonanza
 {
+    /**
+     * Author Shahzaib Malik
+     * Student Number 300852792 
+     * Course COMP-123
+     * Semester 2016(summer)
+     * Date Aug 17 2016
+     */ 
     public static class Program
     {
         public static SelectionForm reopenselectionform;
