@@ -173,6 +173,16 @@ namespace Assignment_7_Movie_Bonanza.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap The_Dark_Knight_Rises_logo {
+            get {
+                object obj = ResourceManager.GetObject("The_Dark_Knight_Rises_logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap thedilemma {
             get {
                 object obj = ResourceManager.GetObject("thedilemma", resourceCulture);

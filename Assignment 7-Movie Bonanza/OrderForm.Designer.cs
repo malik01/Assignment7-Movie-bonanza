@@ -35,7 +35,6 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.costtextbox = new System.Windows.Forms.TextBox();
             this.titletextbox = new System.Windows.Forms.TextBox();
-            this.moviespictures = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -45,9 +44,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.moviespictures = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.moviespictures)).BeginInit();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.moviespictures)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -104,6 +104,7 @@
             // 
             this.costtextbox.Location = new System.Drawing.Point(132, 76);
             this.costtextbox.Name = "costtextbox";
+            this.costtextbox.ReadOnly = true;
             this.costtextbox.Size = new System.Drawing.Size(100, 22);
             this.costtextbox.TabIndex = 5;
             // 
@@ -111,17 +112,9 @@
             // 
             this.titletextbox.Location = new System.Drawing.Point(6, 54);
             this.titletextbox.Name = "titletextbox";
+            this.titletextbox.ReadOnly = true;
             this.titletextbox.Size = new System.Drawing.Size(216, 22);
             this.titletextbox.TabIndex = 4;
-            // 
-            // moviespictures
-            // 
-            this.moviespictures.Location = new System.Drawing.Point(0, 91);
-            this.moviespictures.Name = "moviespictures";
-            this.moviespictures.Size = new System.Drawing.Size(216, 272);
-            this.moviespictures.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.moviespictures.TabIndex = 3;
-            this.moviespictures.TabStop = false;
             // 
             // label3
             // 
@@ -162,6 +155,7 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(132, 145);
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(100, 22);
             this.textBox1.TabIndex = 6;
             // 
@@ -169,6 +163,7 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(132, 212);
             this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(100, 22);
             this.textBox2.TabIndex = 7;
             // 
@@ -176,6 +171,7 @@
             // 
             this.textBox3.Location = new System.Drawing.Point(132, 285);
             this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
             this.textBox3.Size = new System.Drawing.Size(100, 22);
             this.textBox3.TabIndex = 8;
             this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
@@ -207,6 +203,15 @@
             this.label5.TabIndex = 11;
             this.label5.Text = "Sales Tax (13%)";
             // 
+            // moviespictures
+            // 
+            this.moviespictures.Location = new System.Drawing.Point(0, 91);
+            this.moviespictures.Name = "moviespictures";
+            this.moviespictures.Size = new System.Drawing.Size(216, 272);
+            this.moviespictures.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.moviespictures.TabIndex = 3;
+            this.moviespictures.TabStop = false;
+            // 
             // OrderForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -225,9 +230,9 @@
             this.Load += new System.EventHandler(this.OrderForm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.moviespictures)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.moviespictures)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

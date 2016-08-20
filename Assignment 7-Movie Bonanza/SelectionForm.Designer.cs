@@ -32,7 +32,6 @@
             this.movielistbox = new System.Windows.Forms.ListBox();
             this.costtextbox = new System.Windows.Forms.TextBox();
             this.titletextbox = new System.Windows.Forms.TextBox();
-            this.moviespictures = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -40,6 +39,7 @@
             this.catagoryDropDown = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.nextButton = new System.Windows.Forms.Button();
+            this.moviespictures = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.moviespictures)).BeginInit();
             this.SuspendLayout();
@@ -67,6 +67,7 @@
             this.movielistbox.Location = new System.Drawing.Point(201, 116);
             this.movielistbox.Name = "movielistbox";
             this.movielistbox.Size = new System.Drawing.Size(136, 154);
+            this.movielistbox.Sorted = true;
             this.movielistbox.TabIndex = 6;
             this.movielistbox.SelectedIndexChanged += new System.EventHandler(this.movielistbox_SelectedIndexChanged);
             // 
@@ -74,6 +75,7 @@
             // 
             this.costtextbox.Location = new System.Drawing.Point(357, 194);
             this.costtextbox.Name = "costtextbox";
+            this.costtextbox.ReadOnly = true;
             this.costtextbox.Size = new System.Drawing.Size(100, 30);
             this.costtextbox.TabIndex = 5;
             this.costtextbox.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
@@ -82,17 +84,9 @@
             // 
             this.titletextbox.Location = new System.Drawing.Point(201, 54);
             this.titletextbox.Name = "titletextbox";
+            this.titletextbox.ReadOnly = true;
             this.titletextbox.Size = new System.Drawing.Size(228, 30);
             this.titletextbox.TabIndex = 4;
-            // 
-            // moviespictures
-            // 
-            this.moviespictures.Location = new System.Drawing.Point(6, 73);
-            this.moviespictures.Name = "moviespictures";
-            this.moviespictures.Size = new System.Drawing.Size(120, 169);
-            this.moviespictures.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.moviespictures.TabIndex = 3;
-            this.moviespictures.TabStop = false;
             // 
             // label3
             // 
@@ -161,6 +155,15 @@
             this.nextButton.Text = "Next";
             this.nextButton.UseVisualStyleBackColor = true;
             this.nextButton.Click += new System.EventHandler(this.nextButton_Click);
+            // 
+            // moviespictures
+            // 
+            this.moviespictures.Location = new System.Drawing.Point(6, 73);
+            this.moviespictures.Name = "moviespictures";
+            this.moviespictures.Size = new System.Drawing.Size(120, 169);
+            this.moviespictures.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.moviespictures.TabIndex = 3;
+            this.moviespictures.TabStop = false;
             // 
             // SelectionForm
             // 
