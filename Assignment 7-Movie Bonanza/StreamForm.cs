@@ -23,5 +23,10 @@ namespace Assignment_7_Movie_Bonanza
         {
             Application.Exit();
         }
+
+        private void GrandTotalText_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
