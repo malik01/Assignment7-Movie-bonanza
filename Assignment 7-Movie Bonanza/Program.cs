@@ -10,20 +10,19 @@ namespace Assignment_7_Movie_Bonanza
     {
         public static SelectionForm reopenselectionform;
         public static SplashForm splashsrceen;
-        public static SelectionForm selectionscreen;
         public static OrderForm ordercreen;
+        public static SelectionForm selectionscreen;
         public static StreamForm streamscreen;
         [STAThread]
         public static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            selectionscreen = new SelectionForm();
+            
             streamscreen = new StreamForm();
             ordercreen = new OrderForm();
-            
+            selectionscreen = new SelectionForm();
             splashsrceen = new SplashForm();
-            
             Application.Run(splashsrceen);
         }
     }

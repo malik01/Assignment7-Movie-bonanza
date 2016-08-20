@@ -37,5 +37,32 @@ namespace Assignment_7_Movie_Bonanza
         {
             cancel();
         }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        private string _title,_cost;
+
+        public string Title
+        {
+            get { return _title; }
+            set { _title = value; }
+        }
+        public string Cost
+        {
+            get { return _cost; }
+            set { _cost = value; }
+        }
+        private void OrderForm_Load(object sender, EventArgs e)
+        {
+            titletextbox.Text = Title;
+            costtextbox.Text = Cost;
+            //decimal buyMovie = 10.00m;
+            //decimal subTotal = decimal.Parse(costtextbox.Text);
+            //decimal salesTax = 0.13m * subTotal;
+            //decimal grandTotal = salesTax + subTotal;
+
+        }
     }
 }
