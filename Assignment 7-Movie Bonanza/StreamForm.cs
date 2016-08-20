@@ -12,9 +12,16 @@ namespace Assignment_7_Movie_Bonanza
 {
     public partial class StreamForm : Form
     {
+        
         public StreamForm()
         {
             InitializeComponent();
+        }
+
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

@@ -8,6 +8,7 @@ namespace Assignment_7_Movie_Bonanza
 {
     public static class Program
     {
+        public static SelectionForm reopenselectionform;
         public static SplashForm splashsrceen;
         public static SelectionForm selectionscreen;
         public static OrderForm ordercreen;
@@ -18,6 +19,9 @@ namespace Assignment_7_Movie_Bonanza
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             selectionscreen = new SelectionForm();
+            streamscreen = new StreamForm();
+            ordercreen = new OrderForm();
+            
             splashsrceen = new SplashForm();
             
             Application.Run(splashsrceen);

@@ -12,6 +12,7 @@ namespace Assignment_7_Movie_Bonanza
 {
     public partial class SplashForm : Form
     {
+        
         public SelectionForm selectionform = Program.selectionscreen;
         public SplashForm splashForm = Program.splashsrceen;
         public SplashForm()
@@ -24,6 +25,11 @@ namespace Assignment_7_Movie_Bonanza
             Splashscreentimer.Enabled = false;
             selectionform.Show();
             this.Hide();
+        }
+
+        private void SplashForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

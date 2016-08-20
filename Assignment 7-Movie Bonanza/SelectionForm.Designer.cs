@@ -39,6 +39,7 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.FirstAbilityComboBox = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.nextButton = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -158,11 +159,22 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "Please Choose A Movie From The List Below That You Wish To Stream";
             // 
+            // nextButton
+            // 
+            this.nextButton.Location = new System.Drawing.Point(681, 404);
+            this.nextButton.Name = "nextButton";
+            this.nextButton.Size = new System.Drawing.Size(104, 36);
+            this.nextButton.TabIndex = 4;
+            this.nextButton.Text = "Next";
+            this.nextButton.UseVisualStyleBackColor = true;
+            this.nextButton.Click += new System.EventHandler(this.nextButton_Click);
+            // 
             // SelectionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(849, 452);
+            this.Controls.Add(this.nextButton);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.FirstAbilityComboBox);
             this.Controls.Add(this.groupBox1);
@@ -191,5 +203,6 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.ComboBox FirstAbilityComboBox;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button nextButton;
     }
 }
