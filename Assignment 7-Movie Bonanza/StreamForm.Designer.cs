@@ -76,7 +76,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(261, 34);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Thank you for choosing Movie Bonanza!\r\nCopyright: Meer Zaheen Nazmul";
+            this.label1.Text = "Thank you for choosing Movie Bonanza!\r\nAuthor Shahzaib Malik - ID 300852792\r\n";
             // 
             // StreamForm
             // 

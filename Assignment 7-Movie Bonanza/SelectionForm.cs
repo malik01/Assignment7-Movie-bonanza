@@ -70,21 +70,21 @@ namespace Assignment_7_Movie_Bonanza
                 movielistbox.Items.Clear();
                 movielistbox.Items.AddRange(action);
                 catagoryDropDown.Text = catgory[2];
-                costtextbox.Text = cost[0].ToString();
+                costtextbox.Text = cost[2].ToString();
             }
             if (category == 3)
             {
                 movielistbox.Items.Clear();
                 movielistbox.Items.AddRange(scifi);
                 catagoryDropDown.Text = catgory[3];
-                costtextbox.Text = cost[0].ToString();
+                costtextbox.Text = cost[2].ToString();
             }
             if (category == 4)
             {
                 movielistbox.Items.Clear();
                 movielistbox.Items.AddRange(horror);
                 catagoryDropDown.Text = catgory[4];
-                costtextbox.Text = cost[0].ToString();
+                costtextbox.Text = cost[2].ToString();
             }
             if (category == 5)
             {
@@ -98,7 +98,7 @@ namespace Assignment_7_Movie_Bonanza
                 movielistbox.Items.Clear();
                 movielistbox.Items.AddRange(family);
                 catagoryDropDown.Text = catgory[6];
-                costtextbox.Text = cost[0].ToString();
+                costtextbox.Text = cost[6].ToString();
             }
             if (category == 7)
             {
@@ -197,6 +197,11 @@ namespace Assignment_7_Movie_Bonanza
                     moviespictures.Image = new Bitmap(Properties.Resources.realsteel);
                 }
             }
+        }
+
+        private void SelectionForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
